@@ -29,13 +29,15 @@ const gameBoard = (() => {
     //update cell if claimed by a click
     function updateCell(i) {
         cells[i].status = "claimed";
+        user.claim("user", i);
+        //gameWindow.children[i].classList.add("claimedX");
         console.log(cells[i].status + " cell # " + i);
         console.log(cells);
     }
     //console log the array of gameboard cells
     console.log(cells);
 
-    return { updateCell };
+    return { updateCell, cells };
 
 
 })();

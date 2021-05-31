@@ -5,13 +5,14 @@ const Player = (name) => {
     const sayName = () => console.log(`my name is ${name}`);
     //function for player to claim gameBoard cell
 
-    const claim = (player, cell) => {
-
-        console.log(`${player} has claimed cell#: ${cell}`);
-        
+    const claim = (name, cell) => {
+        //cells[i].status = 'claimed';
+        console.log(cell);
+        console.log(`${name} has claimed cell#: ${cell}`);
+        gameWindow.children[cell].classList.add('claimedX');
     }
 
-    return { claim }
+    return { claim, name }
 
 }
 

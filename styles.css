@@ -27,3 +27,11 @@ body {
 .unclaimed {
     /**/
 }
+
+.claimedX {
+    background-color: red;
+}
+
+.claimedO {
+    background-color: blue;
+}
