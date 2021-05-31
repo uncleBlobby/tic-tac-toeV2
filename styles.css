@@ -1,0 +1,29 @@
+body {
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+}
+
+#gameWindow {
+    display: grid;
+    height: 606px;
+    width: 606px;
+    border: 1px dashed salmon;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
+}
+
+.cell {
+    height: 200px;
+    width: 200px;
+    border: 1px dashed salmon;
+}
+
+.cell:hover {
+    background-color: #373737;
+    border: 1px solid white;
+}
+
+.unclaimed {
+    /**/
+}
